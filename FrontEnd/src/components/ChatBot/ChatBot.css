@@ -1,0 +1,89 @@
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  font-size: 14px;
+  right: 20px;
+}
+
+.chat-toggle {
+  background: tomato;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-box {
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  background: tomato;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.chat-body {
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.chat-message.user {
+  background: tomato;
+  color: white;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  /* color: red; */
+  background: #f1f1f1;
+  align-self: flex-start;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.chat-footer button {
+  background: tomato;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}

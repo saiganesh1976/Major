@@ -1,0 +1,155 @@
+/* Procurement.css */
+
+.feedback {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedback.success {
+  background-color: #e6ffed;
+  color: #2b8a3e;
+  border: 1px solid #2b8a3e;
+}
+
+.feedback.error {
+  background-color: #ffe6e6;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.procurement {
+  margin: 30px 0;
+  padding: 0 50px;
+}
+
+.procurement h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+}
+
+.procurement h2 {
+  color: tomato;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.description {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.procurement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formdata-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.formdata-row div {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  gap: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.requestdata-form {
+  margin-top: 50px;
+}
+
+.procurement-input,
+.crop-select {
+  font-family: poppins;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.smt-btn {
+  max-width: 150px;
+  padding: 12px 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.smt-btn:hover {
+  background-color: #e03e3e;
+}
+
+.error-message,
+.success-message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .formdata-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+  
+  .smt-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .procurement h1 {
+    font-size: 28px;
+  }
+  
+  .procurement h2 {
+    font-size: 24px;
+  }
+  
+  .description p {
+    font-size: 14px;
+  }
+  
+  .smt-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

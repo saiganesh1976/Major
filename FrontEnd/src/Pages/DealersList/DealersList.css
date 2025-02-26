@@ -1,0 +1,237 @@
+/* .dealers-form {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 30px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.dealers-form div {
+  width: 100%;
+}
+
+.dealers-form label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dealers-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.dealers-available h2,
+.ration-details h2 {
+  color: tomato;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(255, 99, 71, 0.94);
+}
+
+.view-btn,
+.close-btn {
+  max-width: 120px;
+  border: none;
+  font-family: poppins;
+  padding: 10px;
+  font-weight: 500;
+  border: 2px solid tomato;
+  color: tomato;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dealers-err-msg {
+  text-align: center;
+  color: #ff4d4d;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+@media (max-width: 750px) {
+  .dealers-form {
+    flex-direction: column;
+  }
+} */
+.dealers-form {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dealers-form div {
+  width: 100%;
+}
+
+.dealers-form label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dealers-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Dealer List */
+.dealers-available h2,
+.ration-details h2 {
+  color: tomato;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+.ration-table,
+.dealers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 700px; /* Prevents content from squeezing on small screens */
+}
+
+.ration-table th,
+.ration-table td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.dealers-table th,
+.dealers-table td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.ration-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.dealers-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.ration-table tr:nth-child(odd) {
+  background-color: rgba(255, 99, 71, 0.94);
+}
+
+.dealers-table tr:nth-child(odd) {
+  background-color: rgba(255, 99, 71, 0.94);
+}
+
+.view-btn,
+.close-btn {
+  max-width: 120px;
+  border: none;
+  font-family: poppins;
+  padding: 10px;
+  font-weight: 500;
+  border: 2px solid tomato;
+  color: tomato;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover,
+.close-btn:hover {
+  background-color: tomato;
+  color: white;
+}
+
+/* No dealers found message */
+.dealers-err-msg {
+  text-align: center;
+  color: #ff4d4d;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+  .dealers-form {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dealers-form div {
+    width: 100%;
+  }
+
+  .dealers-select {
+    width: 100%;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .ration-table,
+  .dealers-table {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 468px) {
+  .ration-table,
+  .dealers-table {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
+}

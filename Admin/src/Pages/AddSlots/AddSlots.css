@@ -1,0 +1,51 @@
+.add-slots-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-slots-container h2 {
+  color: #333;
+}
+
+.add-slots-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-slot-btn {
+  padding: 10px 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slots-list {
+  list-style: none;
+  padding: 0;
+  color: tomato;
+  text-align: center;
+  font-weight: 600;
+}
+
+.slot {
+  padding: 8px;
+  background: #ddd;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.Admin-slots-avilable {
+  margin: auto;
+  max-width: 400px;
+  margin-top: 50px;
+}

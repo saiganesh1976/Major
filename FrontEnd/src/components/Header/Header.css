@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  height: 38vw;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #f2f2f2;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.header-content {
+  position: relative;
+  max-width: 600px;
+  padding: 20px;
+  /* color: #cc5500; */
+  animation: fadeIn 2s;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.header-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: #cc5500;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.header-content button:hover {
+  color: black;
+  border: none;
+  background: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: tomato;
+}
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background: #cc5500 !important;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+  .header {
+    height: 50vw;
+  }
+
+  .header-content {
+    max-width: 65%;
+  }
+
+  .header-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-content p {
+    display: none;
+  }
+
+  .header-content button {
+    padding: 1vw 2vw;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

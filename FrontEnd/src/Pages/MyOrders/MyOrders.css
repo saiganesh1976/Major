@@ -1,0 +1,49 @@
+.My-Orders {
+  margin: 50px 0px;
+}
+.My-Orders .orders-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+.myOrders-order {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  color: #454545;
+  padding: 10px 20px;
+  border: 1px solid tomato;
+}
+.myOrders-order img {
+  width: 50px;
+}
+.myOrders-order p span {
+  color: tomato;
+  margin-right: 5px;
+}
+.myOrders-order p b {
+  font-weight: 500;
+  color: #454545;
+}
+.myOrders-order button {
+  border: none;
+  padding: 12px 0px;
+  cursor: pointer;
+  background-color: #ffe1e1;
+  color: #454545;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .myOrders-order {
+    grid-template-columns: 1fr 2fr 0.8fr 0.8fr ;
+    row-gap: 5px;
+    font-size: 12px;
+  }
+  .myOrders-order button {
+    font-size: 10px;
+  }
+}

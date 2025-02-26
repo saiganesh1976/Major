@@ -1,0 +1,111 @@
+/* Updated EmergencyRation.css */
+
+.emergency-ration {
+  margin: 30px 0;
+  padding: 0 50px;
+}
+
+.emergency-ration h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+}
+
+.emergency-ration h2 {
+  color: tomato;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.description {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.request-form {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emergency-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.emergency-form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emergency-form-details div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.request-form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.smt-btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.smt-btn:hover {
+  background-color: #e03e3e;
+}
+
+.error-message,
+.success-message {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .emergency-ration {
+    padding: 0 20px;
+  }
+  .smt-btn {
+    width: 100%;
+  }
+}

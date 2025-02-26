@@ -1,0 +1,74 @@
+.slot-bookings-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+.slot-bookings-container h2 {
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.slot-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.slot-table th,
+.slot-table td {
+  border: 1px solid #ff6347;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.slot-table th {
+  background-color: #ff6347;
+  color: white;
+  font-weight: bold;
+}
+
+.slot-table tr:nth-child(even) {
+  background-color: #ffe6e1;
+}
+
+.slot-table tr:hover {
+  background-color: #ffccbc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slot-bookings-container {
+    padding: 15px;
+  }
+
+  .slot-table th,
+  .slot-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slot-table {
+    display: block;
+    overflow-x: auto; 
+    white-space: nowrap;
+  }
+
+  .slot-bookings-container {
+    padding: 10px;
+  }
+
+  .slot-table th,
+  .slot-table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

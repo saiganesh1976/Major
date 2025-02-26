@@ -1,0 +1,110 @@
+.Admin-Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+  flex-wrap: wrap;
+}
+
+.Admin-Navbar .logo {
+  width: max(10%, 80px);
+}
+
+.Admin-Navbar .profile {
+  width: 40px;
+  cursor: pointer;
+}
+
+.Navbar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Navbar-title img {
+  width: 80px;
+}
+
+.Navbar-main-title {
+  cursor: pointer;
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Navbar-title div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar-admin-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: tomato;
+  text-align: center;
+}
+
+.Navbar-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .Admin-Navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Navbar-title {
+    align-items: center;
+    gap: 5px;
+  }
+
+  .Navbar-title img {
+    width: 60px;
+  }
+
+  .Navbar-main-title {
+    font-size: 1.2rem;
+  }
+
+  .navbar-admin-title {
+    font-size: 1.5rem;
+  }
+
+  .Navbar-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar-title {
+    gap: 13px;
+  }
+
+  .Navbar-title img {
+    width: 50px;
+  }
+
+  .Navbar-main-title {
+    font-size: 1rem;
+  }
+
+  .navbar-admin-title {
+    font-size: 1.2rem;
+  }
+
+  .Navbar-subtitle {
+    font-size: 10px;
+  }
+
+  .Admin-Navbar .profile {
+    width: 30px;
+    display: none;
+  }
+}

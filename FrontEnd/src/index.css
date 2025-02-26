@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+body {
+  min-height: 100vh;
+  font-family: poppins;
+}
+h1 {
+  text-align: center;
+}
+.app {
+  width: 95%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,139 @@
+.monthly-distributions {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 600px;
+}
+.calender {
+  margin: 0 auto;
+}
+
+/* Style for distribution dates */
+.react-calendar__tile.distributed-date {
+  background-color: transparent;
+  border: 3px solid tomato;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.react-calendar__tile.distributed-date:hover {
+  background-color: tomato;
+  border: 3px solid white;
+  color: white;
+}
+.react-calendar {
+  font-family: poppins;
+  background-color: #333; /* Light blue background */
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-calendar__navigation {
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: transparent;
+  border: 3px solid tomato;
+  border-radius: 4px;
+}
+/* Style the day cells */
+.react-calendar__month-view__days__day {
+  color: tomato;
+  font-weight: 500;
+  font-size: 14px;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+abbr[title] {
+  text-decoration: none;
+}
+
+/* Highlight selected day */
+.react-calendar__month-view__days__day--selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Style today’s date */
+.react-calendar__month-view__days__day--today {
+  font-weight: bold;
+  color: #ff6347; /* Tomato color */
+}
+
+/* Hover effect for the days */
+.react-calendar__month-view__days__day:hover {
+  background-color: #e0e0e0;
+}
+
+.react-calendar__navigation__label span {
+  font-family: poppins;
+  font-size: 1rem;
+}
+
+/* Style the navigation arrows */
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+  color: white;
+  font-size: 2rem;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #333;
+  transition: 0.5s ease-in;
+  color: white;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid tomato;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.booking-form h2 {
+  margin-bottom: 10px;
+}
+.booking-form h2 span {
+  color: tomato;
+}
+.booking-form select,
+.booking-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  outline-color: tomato;
+}
+
+.slotbook-btn {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: tomato;
+  width: max(15vw, 200px);
+  padding: 12px 0px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.booking-msg {
+  margin-top: 20px;
+  color: red;
+}

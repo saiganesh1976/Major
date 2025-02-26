@@ -1,0 +1,21 @@
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-group input,
+.form-group select
+{
+    padding: 10px;
+    max-width: 420px;
+}
+.add-member
+{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}

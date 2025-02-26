@@ -1,0 +1,90 @@
+.place-order {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-top: 100px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Left and Right Sections */
+.place-order-left,
+.place-order-right {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Title Styling */
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* Input Fields */
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  outline-color: tomato;
+}
+
+/* Multiple Input Fields Layout */
+.place-order-left .multi-fileds {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensures flexibility for smaller screens */
+}
+
+/* Dropdown Select */
+.ration-card-select {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align for better UI */
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: 90%; /* Use more space on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .place-order-left .title {
+    font-size: 24px; /* Reduce title size for smaller screens */
+    text-align: center;
+  }
+
+  .place-order-left input {
+    padding: 8px; /* Reduce padding for better fit */
+  }
+
+  .ration-card-select {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .place-order-left .title {
+    font-size: 20px;
+  }
+
+  .place-order-left input,
+  .ration-card-select {
+    font-size: 14px; /* Adjust font size */
+  }
+}

@@ -4,7 +4,7 @@ import axios from "axios";
 export const Context = createContext(null);
 
 const ContextProvider = (props) => {
-  const url = "http://localhost:5000";
+  const url = "https://major-backend-5gti.onrender.com";
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
   const [cartItems, setCartItems] = useState({});

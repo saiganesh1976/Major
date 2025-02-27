@@ -11,7 +11,8 @@ Smart Ration Vitran Aur Niyantran (SRVAN) Portal is an advanced digital platform
 - **Slot Booking**: Schedule ration collection slots to reduce crowding.
 - **Grievance Redressal**: Register complaints and track status.
 - **Ration Card Search**: Search and verify ration card details.
-- **PDS Data Integration**: Ensure compliance with PDS guidelines by integrating government data.
+- **Multi-Language Support**: Access the portal in multiple regional languages.
+- **Admin Dashboard**: Comprehensive dashboard for monitoring and managing distribution.
 
 ## Technologies Used
 - **Frontend**: ReactJs

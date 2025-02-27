@@ -262,6 +262,9 @@
   .Navbar-menu {
     display: none;
   }
+  .Navbar-phone-menu {
+    top: 80px;
+  }
 }
 
 @media (max-width: 600px) {

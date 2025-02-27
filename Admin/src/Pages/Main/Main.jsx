@@ -11,7 +11,7 @@ const Main = () => {
   const fetchRequisitionData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/requisition/getRequisition"
+        "https://major-backend-5gti.onrender.com/api/requisition/getRequisition"
       );
       if (response.data.success) {
         setRequisitions(response.data.data);

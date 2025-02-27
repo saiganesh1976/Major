@@ -7,7 +7,7 @@ import axios from "axios";
 import parcel_icon from "../../assets/admin_assets/parcel_icon.png";
 
 const Orders = () => {
-  const url = "http://localhost:5000";
+  const url = "https://major-backend-5gti.onrender.com";
   const [orders, setOrders] = useState([]);
 
   const fetchAllOrders = async () => {

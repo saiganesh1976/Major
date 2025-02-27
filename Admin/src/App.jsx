@@ -16,7 +16,7 @@ import Main from "./Pages/Main/Main";
 // import ListDealers from "./Pages/ListDealers/ListDealers";
 
 const App = () => {
-  const url = "http://localhost:5000";
+  const url = "https://major-backend-5gti.onrender.com";
   return (
     <div>
       <ToastContainer />

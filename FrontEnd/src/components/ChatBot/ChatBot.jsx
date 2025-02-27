@@ -35,9 +35,9 @@ const ChatBot = () => {
       services: "I can assist you with ration card details, e-ration downloads, slot booking, grievances, and more!",
       "ration card": "You can check your ration card details and status in the 'Ration Card Search' section of the portal.",
       "e-ration": "You can download your e-ration card from the 'E-Ration Download' section. Let me know if you need help!",
-      "slot booking": "You can book your ration pickup slot through our 'Slot Booking' feature for a hassle-free experience.",
+      "slot booking": "You can book your ration pickup slot through our 'Monthly Ration Distribution' feature for a hassle-free experience.",
       grievances: "If you have any issues, you can file a complaint in the 'Grievances' section, and we will assist you promptly!",
-      products: "Check out the available ration products in the 'Products' section and ensure compliance with PDS guidelines.",
+      products: "Check out the available ration products in the 'Ration Mart' section and ensure compliance with PDS guidelines.",
       "thank you": "You're welcome! Happy to help. 😊",
       bye: "Goodbye! Have a great day and stay safe! 👋",
     };
@@ -90,3 +90,7 @@ const ChatBot = () => {
 };
 
 export default ChatBot;
+
+
+
+

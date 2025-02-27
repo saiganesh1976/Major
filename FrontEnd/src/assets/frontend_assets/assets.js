@@ -1,9 +1,9 @@
 import basket_icon from './basket_icon.png'
-import logo from './logo.png'
-import header_img from './header_img.png'
+// import logo from './logo.png'
+// import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 
-// import Rice from './Rice.jpg'
+// import Rice from './riceicon.jpeg'
 // import Wheat from './wheat_img.avif'
 // import Sugar from './Sugar.jpg'
 // import CoarseGrains from './millets.jpg'
@@ -12,14 +12,14 @@ import search_icon from './search_icon.png'
 // import Salt from './Salt.jpg'
 // import Kerosene from './Kerosene.jpg'
 
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
+import menu_1 from './rice-cat.avif'
+import menu_2 from './wheat_cat.jpg'
+import menu_3 from './salt-cat.avif'
+import menu_4 from './kerosene-cat.jpg'
+import menu_5 from './sugar-cat.jpg'
+import menu_6 from './oil-cat.png'
+import menu_7 from './pulses-cat.jpg'
+import menu_8 from './coarse-cat.jpg'
 
 import food_1 from './rice1kg.webp'
 import food_2 from './rice5kg.webp'
@@ -49,10 +49,10 @@ import food_25 from './dal.webp'
 import food_26 from './dal1kg.webp'
 import food_27 from './dal2kg.webp'
 import food_28 from './greenda.webp'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
+// import food_29 from './food_29.png'
+// import food_30 from './food_30.png'
+// import food_31 from './food_31.png'
+// import food_32 from './food_32.png'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -73,7 +73,7 @@ import parcel_icon from './parcel_icon.png'
 export const assets = {
     logo,
     basket_icon,
-    header_img,
+    // header_img,
     search_icon,
     rating_starts,
     add_icon_green,
@@ -328,33 +328,34 @@ export const food_list = [
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pulses"
-    }, {
-        _id: "29",
-        name: "5Kg Millits Bag",
-        image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Coarse Grains"
-    }, {
-        _id: "30",
-        name: "5Kg Rajma Bag",
-        image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Coarse Grains"
-    }, {
-        _id: "31",
-        name: "5Kg Bag",
-        image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Coarse Grains"
-    }, {
-        _id: "32",
-        name: "5Kg Bag",
-        image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Coarse Grains"
-    }
+    }, 
+    // {
+    //     _id: "29",
+    //     name: "5Kg Millits Bag",
+    //     image: food_29,
+    //     price: 14,
+    //     description: "Food provides essential nutrients for overall health and well-being",
+    //     category: "Coarse Grains"
+    // }, {
+    //     _id: "30",
+    //     name: "5Kg Rajma Bag",
+    //     image: food_30,
+    //     price: 12,
+    //     description: "Food provides essential nutrients for overall health and well-being",
+    //     category: "Coarse Grains"
+    // }, {
+    //     _id: "31",
+    //     name: "5Kg Bag",
+    //     image: food_31,
+    //     price: 20,
+    //     description: "Food provides essential nutrients for overall health and well-being",
+    //     category: "Coarse Grains"
+    // }, {
+    //     _id: "32",
+    //     name: "5Kg Bag",
+    //     image: food_32,
+    //     price: 15,
+    //     description: "Food provides essential nutrients for overall health and well-being",
+    //     category: "Coarse Grains"
+    // }
 ]

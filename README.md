@@ -33,8 +33,8 @@ Ensure you have the following installed:
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/srvan-portal.git
-   cd srvan-portal
+   git clone https://github.com/saiganesh1976/Major
+   cd Major
    ```
 2. Install dependencies:
    ```sh

@@ -27,7 +27,7 @@ const Main = () => {
   const fetchFarmersData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/farmers/getFarmersData"
+        "https://major-backend-5gti.onrender.com/api/farmers/getFarmersData"
       );
       if (response.data.success) {
         setFarmerRequests(response.data.data);
@@ -43,7 +43,7 @@ const Main = () => {
   const fetchEmergencyData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/emergencyRation/getEmergencyRation"
+        "https://major-backend-5gti.onrender.com/api/emergencyRation/getEmergencyRation"
       );
       if (response.data.success) {
         setEmergencyRequests(response.data.data);

@@ -49,7 +49,7 @@ const Download = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/ration/getRation?rationCardNo=${rationCardNumber}`);
+      const response = await axios.get(`https://major-backend-5gti.onrender.com/api/ration/getRation?rationCardNo=${rationCardNumber}`);
       const data = response.data;
       if (!data.success || !data.user) {
         alert("Ration card not found.");
@@ -66,7 +66,7 @@ const Download = () => {
 
       if (rationCardDetails.familyPhoto) {
         const img = new Image();
-        img.src = `http://localhost:5000/images/${rationCardDetails.familyPhoto}`;
+        img.src = `https://major-backend-5gti.onrender.com/images/${rationCardDetails.familyPhoto}`;
         img.crossOrigin = "Anonymous"; 
 
         img.onload = () => {

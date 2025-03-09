@@ -9,13 +9,40 @@ import "../../i18n/i18n";
 
 const Download = () => {
   const [rationCardNumber, setRationCardNumber] = useState("");
-  const { t, i18n } = useTranslation();
+  const [email, setEmail] = useState("");
+  const [otp, setOTP] = useState("");
+  const [generatedOTP, setGeneratedOTP] = useState(null);
+  const [otpSent, setOtpSent] = useState(false);
+  const [verified, setVerified] = useState(false);
 
-  const handleRationCardNumberChange = (e) => {
-    setRationCardNumber(e.target.value);
+  const { t } = useTranslation();
+
+  const handleSendOtp = () => {
+    if (!email) {
+      alert("Please enter a valid email.");
+      return;
+    }
+
+    const randomOTP = Math.floor(1000 + Math.random() * 9000).toString();
+    setGeneratedOTP(randomOTP);
+    setOtpSent(true);
+    alert(`OTP sent: ${randomOTP}`); // Simulating OTP send
+  };
+
+  const handleVerifyOtp = () => {
+    if (otp === generatedOTP) {
+      setVerified(true);
+      alert("OTP verified successfully.");
+    } else {
+      alert("Invalid OTP. Please try again.");
+    }
   };
 
   const handleDownload = async () => {
+    if (!verified) {
+      alert("Please verify OTP before downloading.");
+      return;
+    }
     if (!rationCardNumber.trim()) {
       alert("Please enter a valid Ration Card number.");
       return;
@@ -144,12 +171,53 @@ const Download = () => {
       <form className="download-form">
         <div className="form-group">
           <label htmlFor="rationCardNumber">{t("label.rationCardNumber")}</label>
-          <input type="text" id="rationCardNumber" value={rationCardNumber} onChange={handleRationCardNumberChange} placeholder={t("placeholder-download.rationCardNumber")} required />
+          <input
+            type="text"
+            id="rationCardNumber"
+            value={rationCardNumber}
+            onChange={(e) => setRationCardNumber(e.target.value)}
+            placeholder={t("placeholder-download.rationCardNumber")}
+            required
+          />
+          <label htmlFor="emailId">Registered Email-Id</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter registered Email-ID"
+            required
+          />
+
+          <label htmlFor="OTP">Enter OTP</label>
+          <div className="download-form-group">
+            <input
+              type="number"
+              id="otp"
+              value={otp}
+              onChange={(e) => setOTP(e.target.value)}
+              placeholder="Enter OTP"
+              required
+            />
+
+            {otpSent ? (
+              <button type="button" onClick={handleVerifyOtp} className="otp-btn">
+                Verify OTP
+              </button>
+            ) : (
+              <button type="button" onClick={handleSendOtp} className="otp-btn">
+                Send OTP
+              </button>
+            )}
+          </div>
         </div>
-        <button type="button" onClick={handleDownload} className="download-button"> {t("button.download")}</button>
+        <button type="button" onClick={handleDownload} className="download-button">
+          {t("button.download")}
+        </button>
       </form>
     </div>
   );
 };
 
 export default Download;
+

@@ -80,7 +80,7 @@ const UserServices = ({ url }) => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/ration/getRation`,
+        `https://major-backend-5gti.onrender.com/api/ration/getRation`,
         {
           params: { rationCardNo: rationCard, district: district },
         }
@@ -147,7 +147,7 @@ const UserServices = ({ url }) => {
           {/* Display Family Photo */}
           {userData.familyPhoto && (
             <div className="image-container">
-              <img src={`http://localhost:5000/images/${userData.familyPhoto}`}  alt="Family Photo" className="family-photo" />
+              <img src={`https://major-backend-5gti.onrender.com/images/${userData.familyPhoto}`}  alt="Family Photo" className="family-photo" />
             </div>
           )}
 

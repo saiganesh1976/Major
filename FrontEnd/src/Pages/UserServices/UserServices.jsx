@@ -111,7 +111,7 @@ const UserServices = ({ url }) => {
         <div className="user-details-form-section">
           <div className="user-details-form-item">
             <p>{t("label.rationCardNumber")}</p>
-            <input type="text" placeholder={t("label.rationCardNumber")} maxLength={10} value={rationCard} onChange={(e) => setRationCard(e.target.value)} required/>
+            <input type="text" placeholder={t("label.rationCardNumber")} maxLength={12} value={rationCard} onChange={(e) => setRationCard(e.target.value)} required/>
           </div>
           <div className="user-details-multifields">
             <div className="user-details-form-item">

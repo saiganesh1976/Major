@@ -42,7 +42,7 @@ const EmergencyRation = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/emergencyRation/addData",
+        "https://major-backend-5gti.onrender.com/api/emergencyRation/addData",
         formData
       );
 

@@ -40,7 +40,7 @@ const RequisitionForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/requisition/addRequisition", formData);
+      const response = await axios.post("https://major-backend-5gti.onrender.com/api/requisition/addRequisition", formData);
 
       if (response.data.success) {
         setFormData({

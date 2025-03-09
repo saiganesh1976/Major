@@ -38,7 +38,7 @@ const DealersList = () => {
   useEffect(() => {
     // Fetch all dealers initially
     axios 
-      .get("http://localhost:5000/api/dealers/listDealers")
+      .get("https://major-backend-5gti.onrender.com/api/dealers/listDealers")
       .then((response) => {
         setDealers(response.data);
       })
@@ -48,7 +48,7 @@ const DealersList = () => {
   useEffect(() => {
     if (selectedState && selectedDistrict) {
       axios
-        .get("http://localhost:5000/api/dealers/listDealers", {
+        .get("https://major-backend-5gti.onrender.com/api/dealers/listDealers", {
           params: { officeState: selectedState, officeDistrict: selectedDistrict },
         })
         .then((response) => {
@@ -76,7 +76,7 @@ const DealersList = () => {
   // Fetch ration card holders for the given shop number
   const fetchRationCardHolders = (shopNumber) => {
     axios
-      .get(`http://localhost:5000/api/dealers/rationCardHolders/${shopNumber}`)
+      .get(`https://major-backend-5gti.onrender.com/api/dealers/rationCardHolders/${shopNumber}`)
       .then((response) => {
         setRationCardHolders(response.data);
         setShowRationDetails(true);

@@ -13,7 +13,6 @@ import emergencyRationRouter from "./routes/emergencyRationRoute.js";
 import farmersRouter from "./routes/farmerRoute.js";
 import requisitionRouter from "./routes/requisitionRoute.js";
 import slotRouters from "./routes/slotsRoute.js";
-import OTPRouter from "./routes/OTPRoute.js";
 
 //app config
 const app = express();
@@ -39,7 +38,6 @@ app.use("/api/requisition",requisitionRouter)
 app.use("/api/emergencyRation",emergencyRationRouter)
 app.use("/api/slots", slotRouters);
 app.use("/api/bookings", bookingRouter);
-// app.use("/api/otp",OTPRouter)
 
 app.get("/", (req, res) => {
   res.send("API Working");

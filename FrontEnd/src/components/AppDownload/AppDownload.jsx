@@ -1,20 +1,24 @@
-import React from 'react'
-import './AppDownload.css'
-import { assets } from '../../assets/frontend_assets/assets'
-import { useTranslation } from 'react-i18next'
+import React from "react";
+import "./AppDownload.css";
+import { assets } from "../../assets/frontend_assets/assets";
+import { useTranslation } from "react-i18next";
 
 const AppDownload = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
-    <div className='app-download'>
-      <p>{t("download_experience")}</p>
+    <div className="app-download">
+      <p className="app-download-text">{t("download_experience")}</p>
       <div className="app-download-platforms">
-        <img src={assets.play_store} alt="play_store" />
-        <img src={assets.app_store} alt="app_store" />
+        <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+          <img src={assets.play_store} alt="Download on Play Store" />
+        </a>
+        <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+          <img src={assets.app_store} alt="Download on App Store" />
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AppDownload
+export default AppDownload;

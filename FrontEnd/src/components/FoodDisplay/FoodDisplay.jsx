@@ -5,6 +5,7 @@ import FoodItem from "../FoodItem/FoodItem";
 import { assets } from "../../assets/frontend_assets/assets";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import { FaSearch, FaExclamationCircle } from "react-icons/fa";
 
 const FoodDisplay = ({ category }) => {
   const { url } = useContext(Context);
@@ -17,7 +18,6 @@ const FoodDisplay = ({ category }) => {
     setSearch(searchTerm);
   };
 
-  // Fetch food list when category or cardType changes
   useEffect(() => {
     const fetchFoodList = async () => {
       try {
@@ -39,7 +39,6 @@ const FoodDisplay = ({ category }) => {
     fetchFoodList();
   }, [category]);
 
-  // Filter by search input
   const filterList = foodList.filter((item) => {
     return item.name.toLowerCase().includes(Search);
   });
@@ -56,7 +55,7 @@ const FoodDisplay = ({ category }) => {
             placeholder={t("food_display_search_placeholder")}
             className="food-search"
           />
-          <img src={assets.search_icon} alt="" />
+          <FaSearch className="search-icon" />
         </div>
       </div>
       <div className="food-display-list">
@@ -73,7 +72,7 @@ const FoodDisplay = ({ category }) => {
           ))
         ) : (
           <p className="No-product-found">
-            {t("food_display_no_product_found")}
+            <FaExclamationCircle className="error-icon" /> {t("food_display_no_product_found")}
           </p>
         )}
       </div>

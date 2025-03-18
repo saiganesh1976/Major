@@ -1,28 +1,119 @@
+/* Announcements Container */
 .Announcements {
   display: flex;
-  margin-bottom: 20px;
+  flex-direction: column;
   align-items: center;
-}
-.Announcements-title {
-  border: 2px solid tomato;
+  gap: 10px;
+  margin-bottom: 20px;
   padding: 10px;
-  color: tomato;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: 500;
+  width: 100%;
+  overflow: hidden;
 }
+
+/* Title Box */
+.Announcements-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #e63946;
+  padding: 8px 14px;
+  color: #e63946;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  background: #fff5f5;
+  text-align: center;
+}
+
 .Announcements-title p {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
 }
-marquee img {
-  width: 70px;
+
+.news-icon {
+  font-size: 22px;
+  color: #e63946;
+}
+
+/* Scrolling News Section */
+.Announcements-content {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   position: relative;
-  top: 10px;
 }
-@media (max-width: 750px) {
+
+/* Smooth Scrolling Animation */
+.scrolling-text {
+  display: flex;
+  gap: 50px;
+  animation: scrollNews 30s linear infinite;
+}
+
+@keyframes scrollNews {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* News Item */
+.news-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff0f0;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+/* News Icon */
+.news-item img {
+  width: 50px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Announcements-title {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .news-icon {
+    font-size: 18px;
+  }
+
+  .scrolling-text {
+    gap: 30px;
+    animation-duration: 12s;
+  }
+
+  .news-item img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
   .Announcements-title {
     font-size: 12px;
-    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .news-icon {
+    font-size: 16px;
+  }
+
+  .scrolling-text {
+    gap: 20px;
+    animation-duration: 14s;
+  }
+
+  .news-item img {
+    width: 30px;
   }
 }

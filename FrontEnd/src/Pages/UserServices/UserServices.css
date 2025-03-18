@@ -1,85 +1,185 @@
-.user-details {
-  width: 100%;
+/* General Container Styling */
+.user-services-container {
+  margin: 30px 0;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.user-details-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 40px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: 1px solid tomato;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.user-details-form-section1 {
-  width: 100%;
-  max-width: max(30%, 500px);
-}
-
-.user-details-form-item input,
-.user-details-form-item select {
-  margin-bottom: 15px;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  outline-color: tomato;
-}
-.user-details-form-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.user-details-form-section1 p {
-  /* color: tomato; */
-  font-weight: 500;
-}
-.user-details-multi-fileds {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.user-details-display {
-  margin-top: 30px;
-}
-.user-details-multi-fileds p {
-  width: 30%;
-}
-.user-details-multifields {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
   align-items: center;
 }
 
-.user-details-submit-btn {
-  width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: tomato;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.image-container {
-  display: flex;
-  justify-content: center;
+.user-services-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.family-photo {
-  width: 500px; /* Adjust size as needed */
-  height: 350px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.user-services-container h2 {
+  color: tomato;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+.user-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Row for State & District */
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+}
+
+.form-half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input and Select Fields */
+.input-field,
+.select-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  border: 3px solid black;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.select-field:disabled {
+  background: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Buttons Styling */
+.btn-submit,
+.btn-otp,
+.btn-verify {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover,
+.btn-otp:hover {
+  background-color: #e03e3e;
+}
+
+/* OTP Section */
+.otp-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-verify {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn-verify:hover {
+  background-color: #218838;
+}
+
+/* Disable Search Button Until OTP is Verified */
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error Messages */
+.error-message {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* User Details Section */
+.user-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.details-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.family-photo {
+  display: block;
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-services-container {
+    padding: 0 20px;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-half {
+    width: 100%;
+  }
 }

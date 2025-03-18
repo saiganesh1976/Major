@@ -25,24 +25,25 @@ const slides = [
   {
     image: slide_3,
     title: "slide3_title",
-    description:"slide3_text",
+    description: "slide3_text",
   },
   {
     image: slide_2,
     title: "slide4_title",
-    description:"slide4_text",
+    description: "slide4_text",
   },
 ];
 
 const Header = () => {
   const { t } = useTranslation();
+  
   return (
     <div className="header">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop
         className="swiper-container"
       >
@@ -55,9 +56,9 @@ const Header = () => {
               <div className="header-content">
                 <h2>{t(slide.title)}</h2>
                 <p>{t(slide.description)}</p>
-                <button>
-                  <a href="#AboutUs">{t("learn_more")}</a>
-                </button>
+                <a href="#AboutUs" className="header-button">
+                  {t("learn_more")}
+                </a>
               </div>
             </div>
           </SwiperSlide>

@@ -1,48 +1,49 @@
-.NewsLetter {
-  height: 300px;
-  margin-top: 50px;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
+/* Newsletter Container */
+.newsletter {
   background-color: tomato;
-  border-radius: 20px;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  border-radius: 20px;
+  padding: 40px 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.NewsLetter-left {
+.newsletter-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading */
+.newsletter-heading {
   font-size: 2rem;
   font-weight: 600;
-  flex: 1;
-  min-width: 250px;
+  margin-bottom: 20px;
 }
 
-.Newsletter-right {
+/* Form */
+.newsletter-form {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex: 1;
-  min-width: 250px;
+  justify-content: center;
+  gap: 15px;
 }
 
-.Newsletter-right input {
-  padding: 10px;
+.newsletter-form input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
   outline: none;
-  color: black;
-  width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-  border: none;
+  font-size: 1rem;
 }
 
-.Newsletter-right button {
+.newsletter-form button {
+  padding: 12px 20px;
   border-radius: 10px;
   border: none;
-  padding: 10px 15px;
   cursor: pointer;
   font-weight: 600;
   background-color: white;
@@ -50,40 +51,41 @@
   transition: 0.3s;
 }
 
-.Newsletter-right button:hover {
+.newsletter-form button:hover {
   background-color: lightgray;
 }
 
-.NewsLetter-link {
+/* Privacy Text */
+.newsletter-text {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.newsletter-link {
   font-weight: 600;
   cursor: pointer;
-}
-.Newsletter-text{
-  padding: 10px;
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 750px) {
-  .NewsLetter {
-    flex-direction: column;
-    text-align: center;
+  .newsletter {
+    padding: 30px 10px;
   }
 
-  .NewsLetter-left {
+  .newsletter-heading {
     font-size: 1.5rem;
-    margin-bottom: 10px;
   }
 
-  .Newsletter-right {
+  .newsletter-form {
     flex-direction: column;
-    gap: 10px;
   }
 
-  .Newsletter-right input {
-    max-width: 100%;
+  .newsletter-form input {
+    width: 100%;
   }
 
-  .Newsletter-right button {
+  .newsletter-form button {
     width: 100%;
   }
 }
